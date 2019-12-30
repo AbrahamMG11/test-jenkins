@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'make check'
+                //sh 'make check'
                 junit 'reports/**/*.xml' 
                 echo 'Deploying....'
             }
